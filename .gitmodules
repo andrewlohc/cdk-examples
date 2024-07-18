@@ -1,0 +1,3 @@
+[submodule "lib/cdk-appsync-merge-apis"]
+	path = lib/cdk-appsync-merge-apis
+	url = https://github.com/andrewlohc/cdk-appsync-merge-apis.git
