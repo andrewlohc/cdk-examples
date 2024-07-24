@@ -4,3 +4,6 @@
 [submodule "lib/cdk-typescript-template"]
 	path = lib/cdk-typescript-template
 	url = https://github.com/andrewlohc/cdk-typescript-template.git
+[submodule "lib/cdk-appsync-aurora-serverless"]
+	path = lib/cdk-appsync-aurora-serverless
+	url = https://github.com/andrewlohc/cdk-appsync-aurora-serverless.git
