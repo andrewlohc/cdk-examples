@@ -10,3 +10,11 @@
 	path = lib/cdk-appsync-aurora-serverless
 	url = https://github.com/andrewlohc/cdk-appsync-aurora-serverless.git
 	branch = main
+[submodule "lib/cdk-lambda-golang"]
+	path = lib/cdk-lambda-golang
+	url = https://github.com/andrewlohc/cdk-lambda-golang.git
+	branch = main
+[submodule "lib/cdk-lambda-rust"]
+	path = lib/cdk-lambda-rust
+	url = https://github.com/andrewlohc/cdk-lambda-rust.git
+	branch = main

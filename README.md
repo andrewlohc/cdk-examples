@@ -124,7 +124,7 @@ To add a new submodule to the project:
 
 1. Add the submodule:
    ```
-   git submodule add https://github.com/andrewlohc/cdk-examples.git path/to/submodule
+   git submodule add -b main https://github.com/username/repository-name.git path/to/submodule
    ```
 
 2. Commit the changes:
