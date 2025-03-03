@@ -94,7 +94,7 @@ To create a new submodule from scratch:
 
 3. Pull files from the template repository (without history):
    ```
-   git remote add template https://github.com/your-username/cdk-typescript-template.git
+   git remote add template https://github.com/andrewlohc/cdk-typescript-template.git
    git fetch --depth=1 template
    git checkout FETCH_HEAD -- .
    ```
