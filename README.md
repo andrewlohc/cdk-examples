@@ -77,6 +77,47 @@ To update all submodules to their latest commits:
    git push origin main
    ```
 
+## Create a New Submodule
+
+To create a new submodule from scratch:
+
+1. Create a new directory for your project:
+   ```
+   mkdir my-new-project
+   cd my-new-project
+   ```
+
+2. Initialize a new Git repository:
+   ```
+   git init
+   ```
+
+3. Pull files from the template repository (without history):
+   ```
+   git remote add template https://github.com/your-username/cdk-typescript-template.git
+   git fetch --depth=1 template
+   git checkout FETCH_HEAD -- .
+   ```
+
+4. Remove the template remote:
+   ```
+   git remote remove template
+   ```
+
+5. Set up your own remote repository:
+   ```
+   git remote add origin https://github.com/your-username/your-new-repo.git
+   ```
+
+6. Push your changes to the remote repository:
+   ```
+   git add .
+   git commit -m "feat: initial commit"
+   git push -u origin main
+   ```
+
+7. Now you can add this repository as a submodule to your main project (see next section).
+
 ## Adding a New Submodule
 
 To add a new submodule to the project:
@@ -89,7 +130,7 @@ To add a new submodule to the project:
 2. Commit the changes:
    ```
    git add .
-   git commit -m "Add new submodule"
+   git commit -m "feat: add new submodule"
    git push origin main
    ```
 
