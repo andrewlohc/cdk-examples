@@ -40,8 +40,8 @@ git clone --recursive https://github.com/andrewlohc/cdk-examples.git
 3. Make your changes, commit, and push:
    ```
    git add .
-   git commit -m "Your commit message"
-   git push origin main
+   git commit -m "feat: your commit message"
+   git push -u origin main
    ```
 
 4. Return to the main repository root:
@@ -52,7 +52,7 @@ git clone --recursive https://github.com/andrewlohc/cdk-examples.git
 5. Update the main repository to point to the new submodule commit:
    ```
    git add path/to/submodule
-   git commit -m "Update submodule to latest commit"
+   git commit -m "chore: update submodule"
    git push origin main
    ```
 
