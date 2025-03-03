@@ -2,6 +2,49 @@
 
 This project uses Git submodules. Below are instructions on how to work with submodules in this repository.
 
+## Prerequisites
+
+Before working with this repository, ensure you have the following installed:
+
+1. **Node.js**: Required to run CDK and install dependencies
+   - Install from [nodejs.org](https://nodejs.org/)
+   - Recommended version: Node.js 16.x or later
+
+2. **pnpm**: Package manager used for this project
+   - Install with: `npm install -g pnpm`
+   - Or follow instructions at [pnpm.io](https://pnpm.io/installation)
+
+3. **AWS CLI**: Required for deploying CDK applications
+   - Install from [AWS CLI Installation Guide](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
+   - Configure with your credentials: `aws configure`
+
+4. **Git**: Required for working with this repository and its submodules
+   - Install from [git-scm.com](https://git-scm.com/downloads)
+
+## Installing and Updating CDK Toolkit
+
+The AWS CDK Toolkit (cdk command-line tool) is required to work with CDK applications.
+
+1. Install the CDK Toolkit globally using pnpm:
+   ```
+   pnpm add -g aws-cdk
+   ```
+
+2. Verify the installation:
+   ```
+   cdk --version
+   ```
+
+3. Update to the latest version:
+   ```
+   pnpm update -g aws-cdk
+   ```
+
+4. Bootstrap your AWS environment (if not already done):
+   ```
+   cdk bootstrap aws://ACCOUNT-NUMBER/REGION
+   ```
+
 ## Setting up Git Submodules
 
 1. Clone the main repository:
