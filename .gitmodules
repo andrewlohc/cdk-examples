@@ -18,3 +18,7 @@
 	path = lib/cdk-lambda-rust
 	url = https://github.com/andrewlohc/cdk-lambda-rust.git
 	branch = main
+[submodule "lib/cdk-cloud-gaming-ec2-steam"]
+	path = lib/cdk-cloud-gaming-ec2-steam
+	url = https://github.com/andrewlohc/cdk-cloud-gaming-ec2-steam
+	branch = main
