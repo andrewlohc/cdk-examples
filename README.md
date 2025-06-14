@@ -101,24 +101,21 @@ git clone --recursive https://github.com/andrewlohc/cdk-examples.git
 
 ## Updating Submodules
 
-To update all submodules to their latest commits:
+```bash
+# Pull latest from main repo
+git pull origin main
 
-1. Pull the latest changes from the main repository:
-   ```
-   git pull origin main
-   ```
+# Update specific submodule
+git submodule update --remote lib/submodule-name
 
-2. Update all submodules:
-   ```
-   git submodule update --remote --merge
-   ```
+# Update all submodules
+git submodule update --remote --merge
 
-3. Commit the changes in the main repository:
-   ```
-   git add .
-   git commit -m "Update submodules to latest"
-   git push origin main
-   ```
+# Commit and push changes
+git add .
+git commit -m "chore: update submodules"
+git push origin main
+```
 
 ## Create a New Submodule
 
